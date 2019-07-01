@@ -1,9 +1,8 @@
-import React, { Component, Fragment } from 'react'
+import React from 'react'
 import TodoItem from './components/todoItem'
 import AddTodoItem from './components/addTodoItem'
 import './css/index.css'
 import { DeleteAction, ChangeAction, AddAction } from '../../store/storeCreator'
-import store from '../../store'
 import { connect } from 'react-redux'
 // class Todolist extends Component {
 //     constructor(props) {
