@@ -18,6 +18,7 @@ const reducer = (state = data, action) => {
                 ...state
             }
             newState.list.splice(action.index, 1)
+            console.log(newState)
             return newState
         }
         case Change_Type: {
