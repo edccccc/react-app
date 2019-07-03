@@ -5,12 +5,13 @@ import Todolist from './pages/todoLists'
 import 'antd/dist/antd.css';
 import {Provider} from 'react-redux';
 import store from './store'
+import RouterDom from './pages/router'
 const App = (
 <Provider store={store}>
     <Todolist/>
 </Provider>
 )
-ReactDOM.render(App, document.getElementById('root'));
+ReactDOM.render(<RouterDom/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -14,11 +14,8 @@ const reducer = (state = data, action) => {
     switch (actionType) {
         // eslint-disable-next-line no-lone-blocks
         case Delete_Type: {
-            const newState = {
-                ...state
-            }
+            const newState = JSON.parse(JSON.stringify(state))
             newState.list.splice(action.index, 1)
-            console.log(newState)
             return newState
         }
         case Change_Type: {
